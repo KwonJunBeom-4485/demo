@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>1. 테이블 만들기</title>
+    <style>
+        /* CSS 주석처리 */
+        /* 태그 이름 선택자 : 태그 이름 그 자체로 특정 요소를 선택 */
+        table {
+            /* border-collapse 속성 : 기본 seperate, collapse(하나로 합쳐줘요.) */
+            border-collapse: collapse;
+            /* border-width: 3px; */
+            /* 외곽선(border)의 두께*/
+            /* border-style: solid; */
+            /* border의 스타일 : dashed (.--.--.--), dotted(......)*/
+            /* border-color: black; */
+            /* border의 색상 */
+            /* 위에 있는 border에 대한 두께, 스타일, 색상을 합친 속성 */
+            border: 3px solid black;
+            width: 80%;
+            /* 표시되는 화면에 80% 크기를 가지겠다. */
+            text-align: center;
+        }
+
+        tr {
+            height: 24px;
+            /* tr의 높이 설정*/
+            font-size: 14px;
+            /* 글자크기 */
+        }
+
+        tr:hover {
+            color: white;
+            font-weight: bold;
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+        th {
+            height: 25px;
+            font-size: 16px;
+            background-color: #ddaff1;
+        }
+
+        /* id 선택자 : id 선택자는 요소의 id값 앞에 #을 붙여서 사용. */
+        #id {
+            width: 15%;
+        }
+
+        #name {
+            width: 10%;
+        }
+
+        #major {
+            width: 25%;
+        }
+
+        #email {
+            width: 50%;
+        }
+
+        /* class 선택자 : 이 선택자는 요소의 클래스 명 앞에 .을 붙여서 사용 */
+        .odd {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>학생정보 테이블 </h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th id="id">학번</th>
+                <th id="name">이름</th>
+                <th id="major">학과</th>
+                <th id="email">이메일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>202601</td>
+                <td>홍길동</td>
+                <td>체육학과</td>
+                <td>hong@naver.com</td>
+            </tr>
+            <tr class="odd">
+                <!-- CSS inline 방식 -->
+                <td>202602</td>
+                <td>이순신</td>
+                <td>해양학과</td>
+                <td>lee@naver.com</td>
+            </tr>
+            <tr>
+                <td>202603</td>
+                <td>강감찬</td>
+                <td>정치외교</td>
+                <td>kang@naver.com</td>
+            </tr>
+            <tr class="odd">
+                <td>202604</td>
+                <td>유관순</td>
+                <td>유아교육</td>
+                <td>yougs@naver.com</td>
+            </tr>
+            <tr>
+                <td>202605</td>
+                <td>정약용</td>
+                <td>물리화학</td>
+                <td>jungyy@naver.com</td>
+            </tr>
+            <tr class="odd">
+                <td>202606</td>
+                <td>유성룡</td>
+                <td>행정학과</td>
+                <td>ryusy@naver.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

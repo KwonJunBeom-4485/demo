@@ -1,0 +1,18 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <!-- 서블릿 지정 -->
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>TestServlet</servlet-class>
+  </servlet>
+  <!-- 서블릿 맵핑 -->
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test2.do</url-pattern>
+    <!-- 이렇게 하면 기존의 test.do도 되고, test2.do도 된다. -->
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,7 @@
+index.jsp 파일을 수정한 뒤, 웹페이지에서 새로고침(F5)으로 수정 사항을 바로 적용하고 싶다면,
+Community Server Connector 밑에 있는 Tomcat에 Add Deployment를 했을 때 File이 아닌 Exploded로 해야 한다.
+Exploded는 target 내에 있는 demo 폴더 내용을 저장한 demo.war 파일이 아니라 직접 demo 폴더에 엑세스해서
+데이터가 변하더라도 바로 수정 사항을 적용받을 수 있게 설계 되어있는 것으로 추정된다.
+
+만일 서버를 실행 했을 때 404 error로 연결이 되지 않는다면, Tomcat server의 Status 부분이 Synchronized가 되도록
+우클릭으로 Publish Server (Full)을 누르면 된다.
