@@ -42,7 +42,7 @@ pageEncoding="UTF-8"%>
             
             <!-- action="res_login_ok.jsp"으로 하면 jsp 방식 -->
              <!-- /checklogin.do 이건 Servlet을 활용한 방식 -->
-            <form action="../checklogin.do" method="post">
+            <form action="demo/checklogin.do" method="post">
                 <table border="1">
                     <tr>  <!-- rowspan, colspan 사용 -->
                         <td><input type="text" name="id" placeholder="아이디"></td>
