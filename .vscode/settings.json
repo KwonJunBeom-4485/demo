@@ -1,4 +1,10 @@
 {
     "java.configuration.updateBuildConfiguration": "interactive",
-    "java.dependency.packagePresentation": "flat"
+    "java.dependency.packagePresentation": "flat",
+    "maven.terminal.favorites": [
+        {
+            "command": "clean package",
+            "debug": false
+        }
+    ]
 }

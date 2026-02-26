@@ -1,0 +1,21 @@
+{
+	"JSP Template": {
+		"prefix": "jsp",
+		"body": [
+			"<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\" pageEncoding=\"UTF-8\"%>",
+			"<%@ taglib prefix=\"c\" uri=\"jakarta.tags.core\" %>",
+			"<%@ taglib prefix=\"fmt\" uri=\"jakarta.tags.fmt\" %>",
+			"<!DOCTYPE html>",
+			"<html>",
+			"\t<head>",
+			"\t\t<meta charset=\"UTF-8\">",
+			"\t\t<title>Insert title here</title>",
+			"\t</head>",
+			"\t<body>",
+			"\t\t$0",
+			"\t</body>",
+			"</html>"
+		],
+		"description": "JSP Default Template"
+	}
+}
